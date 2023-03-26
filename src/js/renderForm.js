@@ -30,8 +30,7 @@ function renderingCountryList(country) {
   <img src="${flags.svg}" alt="Flag of ${name.common}" width="100" height="50">
      <p>${country.name.common}</p>
             </li>`;
-    
-            countryList.innerHTML(countryName);
+            countryList.insertAdjacentElement(countryName);
 }
 
   function renderingCountryInfo(country) {
