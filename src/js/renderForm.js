@@ -1,5 +1,5 @@
 const countryList = document.querySelector('.country-list')
-const countryInfo = document.querySelector('country-info')
+const countryInfo = document.querySelector('.country-info')
 
 function renderingCountryList(countries) {
   countryList.innerHTML = countries
@@ -31,4 +31,4 @@ function renderingCountryList(countries) {
       .join('');
   }
   
-  export {renderingCountryList, renderingCountryInfo};
+  export {countryList, countryInfo, renderingCountryList, renderingCountryInfo};
