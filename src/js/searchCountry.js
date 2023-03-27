@@ -3,7 +3,6 @@ const options = 'fields=name,capital,population,flags,languages';
 
 
 export default function fetchCountries(name) {
-
     return fetch(`${BASE_URL}/name/${name}?${options}`)
     .then(responce => {
         if(!responce.ok) {
@@ -13,11 +12,3 @@ export default function fetchCountries(name) {
     }
     );
 }
-
-
-// ${BASE_URL}name/{name.toLowerCase()}?${options}
-
-
-// `https://restcountries.com/v3.1/all?fields=name,flags`
-
-// https://restcountries.com/v3.1/name/{name}
