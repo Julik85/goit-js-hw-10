@@ -32,13 +32,19 @@ function handleDataInput(event) {
             clearData();
             renderingCountryInfo(fetchCountriesData);
         };
+      }).catch (error => {
+        Notify.failure('Oops, there is no country with that name');
+        clearData();
+        clearInput();
       })
 }
 function clearData() {
-        countryInfo.innerHTML = '';
-        countryList.innerHTML = '';
-      }
+  countryInfo.innerHTML = '';
+  countryList.innerHTML = '';
+}
 
-
+function clearInput() {
+  formInput.value = '';
+}
 
 
